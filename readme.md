@@ -1,5 +1,5 @@
 ## Questions and insights:
-### **Where is the minkowski distance metric usually used. To what problem setting does it apply?**/
+### **Where is the minkowski distance metric usually used. To what problem setting does it apply?**
 ChatGPT
 The Minkowski distance metric is a generalization of other distance metrics such as the Euclidean distance and the Manhattan distance. It is used in various problem settings and is particularly applicable in cases where you need to measure the similarity or dissimilarity between two objects in a multidimensional space.
 
@@ -17,7 +17,7 @@ When p -> ∞, the Minkowski distance becomes the Chebyshev distance. It represe
 
 The choice of the value of p depends on the specific problem and the characteristics of the data. The Minkowski distance metric provides flexibility in adjusting the sensitivity to different dimensions and can be tailored to different problem settings.
 
-### **so what characteristics does a dataset need to have where usually the minkowski distance is used to determine distance between two datapoints?**/
+### **so what characteristics does a dataset need to have where usually the minkowski distance is used to determine distance between two datapoints?**
 ChatGPT
 The Minkowski distance can be used with datasets that have the following characteristics:
 
@@ -35,7 +35,7 @@ Flexible Distance Measure: The Minkowski distance provides flexibility in choosi
 
 It's important to note that the choice of distance metric, including the Minkowski distance, depends on the specific problem, data characteristics, and the goals of the analysis. Different distance metrics may be more suitable for certain types of data or specific analysis tasks. Therefore, it is recommended to assess the properties of the dataset and consider the specific requirements of the problem before selecting the appropriate distance measure.
 
-### **but even in multi dimensional datasets why wouldn't distance metrics like euclidean distance still apply? Why use minkowski?**/
+### **but even in multi dimensional datasets why wouldn't distance metrics like euclidean distance still apply? Why use minkowski?**
 ChatGPT
 
 You are correct that the Euclidean distance is a commonly used distance metric in multidimensional datasets. The Euclidean distance measures the straight-line distance between two points in Euclidean space and is widely applicable in various domains.
