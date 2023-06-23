@@ -49,3 +49,7 @@ When "p" is set to 2, the Minkowski distance reduces to the Euclidean distance (
 When "p" is set to higher values, the Minkowski distance places greater emphasis on larger differences in coordinates. This can be useful in scenarios where outliers or extreme values in certain dimensions have a significant impact on the overall distance calculation.
 
 In summary, while the Euclidean distance is a widely used and effective distance metric, the Minkowski distance provides additional flexibility by allowing you to adjust the value of "p" and adapt the distance measure to different scenarios. It allows for different notions of distance, such as emphasizing certain dimensions or accommodating specific data characteristics. The choice between the Euclidean distance and the Minkowski distance with a specific "p" value depends on the specific problem, the data, and the desired behavior of the distance metric.
+
+
+Dataset:
+1. E-commerice. From repository https://github.com/MauricioLetelier/E-commerce-Clustering.git
