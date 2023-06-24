@@ -53,3 +53,7 @@ In summary, while the Euclidean distance is a widely used and effective distance
 
 Dataset:
 1. E-commerice. From repository https://github.com/MauricioLetelier/E-commerce-Clustering.git
+
+References:
+1. https://towardsdatascience.com/log-book-guide-to-distance-measuring-approaches-for-k-means-clustering-f137807e8e21
+2. https://www.researchgate.net/publication/353057640_New_K-means_Clustering_Method_Using_Minkowski's_Distance_as_its_Metric
