@@ -1,3 +1,6 @@
+## Usage:
+in the directory where `tests.py` exists run command `python tests.py <p value e.g. 1, 2, 3, ..., n>`
+
 ## Questions and insights:
 ### **Where is the minkowski distance metric usually used. To what problem setting does it apply?**
 ChatGPT
@@ -51,9 +54,19 @@ When "p" is set to higher values, the Minkowski distance places greater emphasis
 In summary, while the Euclidean distance is a widely used and effective distance metric, the Minkowski distance provides additional flexibility by allowing you to adjust the value of "p" and adapt the distance measure to different scenarios. It allows for different notions of distance, such as emphasizing certain dimensions or accommodating specific data characteristics. The choice between the Euclidean distance and the Minkowski distance with a specific "p" value depends on the specific problem, the data, and the desired behavior of the distance metric.
 
 
-Dataset:
+### **Dataset:**
 1. E-commerice. From repository https://github.com/MauricioLetelier/E-commerce-Clustering.git
 
-References:
+
+### **Exploratory Data Analysis**
+1. What feature sets are relevant in such a way that it forms clusters when visualized?
+2. What insights could be derived from these clusters?
+3. Are the features of the selected relevant feature sets correlated to each other in some regard?
+
+
+
+### **References:**
 1. https://towardsdatascience.com/log-book-guide-to-distance-measuring-approaches-for-k-means-clustering-f137807e8e21
 2. https://www.researchgate.net/publication/353057640_New_K-means_Clustering_Method_Using_Minkowski's_Distance_as_its_Metric
+
+

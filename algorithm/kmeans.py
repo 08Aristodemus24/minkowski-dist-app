@@ -48,12 +48,15 @@ class KMeans:
             return np.sum(np.abs(curr_x - centroids), axis=1)
         
         elif dist_metric == 'euclidean':
-            return np.sqrt(np.sum((curr_x - centroids) ** 2, axis=1))
+            temp = np.sum((curr_x - centroids) ** 2, axis=1)
+            
+            return np.sqrt(temp)
 
         elif dist_metric == 'minkowski':
             p = self.p
+            temp = np.sum((curr_x - centroids) ** p, axis=1)
 
-            return  np.sum((curr_x - centroids) ** p, axis=1) ** (1 / p)
+            return np.power(temp, 1 / p)
 
     def _assign_centroids_to_xs(self, X, centroids):
         """
