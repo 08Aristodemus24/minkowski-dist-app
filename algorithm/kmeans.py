@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 
 class KMeans:
-    def __init__(self, X, K, epochs=10, initializer="permutation", dist_metric='euclidean', p=3):
+    def __init__(self, X, K, features, epochs=10, initializer="permutation", dist_metric='euclidean', p=3):
         self.X = X
         self.K = K
         self.num_instances = X.shape[0]
@@ -15,6 +15,8 @@ class KMeans:
 
         # this is used if distance metric is minkowski
         self.p = p
+
+        self.features = features
 
 
     def init_centroids(self, X):
@@ -156,9 +158,9 @@ class KMeans:
 
 
         # plot centroids across iterations
-        self.plot_evolution(X, np.array(prev_centroids), xs_centroids, dimension='3d')
+        self.plot_evolution(X, np.array(prev_centroids), xs_centroids, features=self.features, dimension='3d')
             
-    def plot_evolution(self, X, centroids, xs_centroids, dimension='2d'):
+    def plot_evolution(self, X, centroids, xs_centroids, features: list, dimension='2d'):
         """
         centroids - a 3D tensor of shape (epochs, K, n)
         """
@@ -205,9 +207,9 @@ class KMeans:
                 axis.plot(cs_of_k[-1, 0], cs_of_k[-1, 1], cs_of_k[-1, 2], 'p--', color='#ff00bf')
 
             # n_clicks, amount_discount, amount_spent
-            axis.set_xlabel('x: n_clicks')
-            axis.set_ylabel('y: amount_discount')
-            axis.set_zlabel('z: amount_spent')
+            axis.set_xlabel(f'x: {features[0]}')
+            axis.set_ylabel(f'y: {features[1]}')
+            axis.set_zlabel(f'z: {features[2]}')
 
             
 

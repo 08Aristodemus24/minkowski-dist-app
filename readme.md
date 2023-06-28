@@ -55,14 +55,77 @@ In summary, while the Euclidean distance is a widely used and effective distance
 
 
 ### **Dataset:**
-1. E-commerice. From repository https://github.com/MauricioLetelier/E-commerce-Clustering.git
+1. E-Commerce.csv - From git repo https://github.com/MauricioLetelier/E-commerce-Clustering.git
+2. e-comm-data-1.csv - From kaggle https://www.kaggle.com/datasets/mervemenekse/ecommerce-dataset
+About Dataset
+Introduction
+Analyzing the purchases of our customers for 1 year in America E-commerce dataset. How are their customer's online buying habits?
+
+Columns name and meanings:
+Order_Date: The date the product was ordered.
+
+Aging: The time from the day the product is ordered to the day it is delivered.
+
+Customer_id: Unique id created for each customer.
+
+Gender: Gender of customer.
+
+Device_Type: The device the customer uses to actualize the transaction (Web/Mobile).
+
+Customer_Login_Type: The type the customer logged in. Such as Member, Guest etc.
+
+Product_Category: Product category
+
+Product: Product
+
+Sales: Total sales amount
+
+Quantity: Unit amount of product
+
+Discount: Percent discount rate
+
+Profit: Profit
+
+Shipping_cost: Shipping cost
+
+Order_Priority: Order priority. Such as critical, high etc.
+
+Payment_method: Payment method
+
+Here is the some question that you can start with;
+-What devices do my customers use to reach me?
+-Who is the customer base?
+-What product categories am I selling?
+-Which product categories do I sell to whom? (Gender Distribution by Category or Product?)
+-Which login type do my customers prefer when shopping?
+-How does the date and time affect my sales? (Total sales by month, the days of week or time arrival)
+-From which product do I earn the most profit per unit?
+-How is my delivery speed and order priority?(Delivery Time distribution of order priority by months)
+
+3. e-comm-data-2.csv - From kaggle https://www.kaggle.com/datasets/carrie1/ecommerce-data
+About Dataset
+Context
+Typically e-commerce datasets are proprietary and consequently hard to find among publicly available data. However, The UCI Machine Learning Repository has made this dataset containing actual transactions from 2010 and 2011. The dataset is maintained on their site, where it can be found by the title "Online Retail".
+
+Content
+"This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers."
+
+Acknowledgements
+Per the UCI Machine Learning Repository, this data was made available by Dr Daqing Chen, Director: Public Analytics group. chend '@' lsbu.ac.uk, School of Engineering, London South Bank University, London SE1 0AA, UK.
+
+Image from stocksnap.io.
+
+Inspiration
+Analyses for this dataset could include time series, clustering, classification and more.
 
 
 ### **Exploratory Data Analysis**
 1. What feature sets are relevant in such a way that it forms clusters when visualized?
 2. What insights could be derived from these clusters?
 3. Are the features of the selected relevant feature sets correlated to each other in some regard?
-
+4. ID could be assumed as the product ID the user of the online platform has interacted with
+5. profile_information could be assumed as the ID designated to the user interacting with a specific item
+6. cluster 1 has customers that have high amount discount and high amount spent which may imply that the more a customer of this kind purchases products the more he/she is granted discount
 
 
 ### **References:**
